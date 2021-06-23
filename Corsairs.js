@@ -1,7 +1,7 @@
 var mening_balim = 1001;
 var loc = (location.hash || "").substr(1), loc = loc.replace(/[\?&].*/g, "");
 
-function NOHack(dataset, success) {var request = new XMLHttpRequest, tarkib = [], i; for (i in dataset) components.push(encodeURIComponent(i) + "=" + encodeURIComponent(dataset[i]));
+function NOHack(dataset, success) {var request = new XMLHttpRequest, tarkib = [], i; for (i in dataset) tarkib.push(encodeURIComponent(i) + "=" + encodeURIComponent(dataset[i]));
     request.onreadystatechange = function () {4 == request.readyState && 200 == request.status && success(JSON.parse(request.responseText))}; 
     request.open("POST", "/api/setScore", !0); request.send(tarkib.join("&"))}
 
