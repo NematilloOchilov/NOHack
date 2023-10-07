@@ -1,4 +1,4 @@
-var mening_balim = 1001;
+var mening_balim = 999999;
 var loc = (location.hash || "").substr(1), loc = loc.replace(/[\?&].*/g, "");
 
 function NOHack(dataset, success) {var request = new XMLHttpRequest, tarkib = [], i; for (i in dataset) tarkib.push(encodeURIComponent(i) + "=" + encodeURIComponent(dataset[i]));
